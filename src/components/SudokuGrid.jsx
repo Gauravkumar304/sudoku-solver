@@ -1,5 +1,3 @@
-// src/components/SudokuGrid.jsx
-
 import React from 'react';
 
 const SudokuGrid = ({ grid, setGrid, isSolved }) => {
@@ -12,11 +10,10 @@ const SudokuGrid = ({ grid, setGrid, isSolved }) => {
   };
 
   const getCellColor = (value) => {
-    // Color logic for empty vs filled cells
     if (value === "") {
-      return "bg-white";  // white for empty cells
+      return "bg-white";  
     }
-    return "bg-[#fbc1ea]"; // light green for filled cells
+    return "bg-[#fbc1ea]"; 
   };
 
   return (
